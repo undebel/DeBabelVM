@@ -22,6 +22,8 @@ namespace BabelVMRestore {
             //Unknown at moment
             //var toDelete = new List<TypeDef>();
             var invokeMethod = FindInvokeMethod();
+            if (invokeMethod == null)
+                return 0;
             var invokeCallerInfo = FindDynamicMethodCallers();
             return InvokeMembers(invokeMethod, invokeCallerInfo);
         }
