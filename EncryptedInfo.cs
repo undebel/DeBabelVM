@@ -1,9 +1,10 @@
 ﻿
-using dnlib.DotNet;
 using System.Reflection.Emit;
+using dnlib.DotNet;
+
 namespace BabelVMRestore
 {
-    public class EncryptedInfo
+    internal class EncryptedInfo
     {
         public MethodDef Method;
         public int Key;
